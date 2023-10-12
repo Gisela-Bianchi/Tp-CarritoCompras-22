@@ -2,7 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>gTro</h1>
+ 
+  
+
+    <nav class="navbar bg-body-tertiary mb-5">
+      <div class="container-fluid">
+        <form class="d-flex" role="Buscar">
+          <input class="form-control me-2" type="" placeholder="Search" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
   
 
    <div class="row row-cols-1 row-cols-md-3 g-4">
