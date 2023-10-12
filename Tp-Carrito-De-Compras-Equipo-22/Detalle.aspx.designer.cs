@@ -11,7 +11,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
 {
 
 
-    public partial class ListadoDeArticulos
+    public partial class Default
     {
     }
 }

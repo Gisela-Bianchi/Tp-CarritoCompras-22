@@ -5,15 +5,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocio;
+using Dominio;
 
 
 namespace Tp_Carrito_De_Compras_Equipo_22
 {
-    public partial class ListadoDeArticulos : System.Web.UI.MasterPage
+    public partial class Detalle : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

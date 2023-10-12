@@ -11,7 +11,6 @@
              <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
              <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
              <asp:BoundField HeaderText="IdMarca" DataField="Marca.Id" />
-             <asp:BoundField HeaderText="Categoria" DataField="Categoria.Id" />
              <asp:BoundField HeaderText="Precio" DataField="Precio" />
              <asp:BoundField HeaderText="Marca" DataField="Marca.Descripcion" />
             <asp:BoundField HeaderText="ImagenUrl" DataField="ImagenUrl" />

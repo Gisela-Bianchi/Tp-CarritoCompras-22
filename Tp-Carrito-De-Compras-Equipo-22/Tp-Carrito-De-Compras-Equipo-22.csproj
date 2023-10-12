@@ -64,25 +64,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Detalle.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="main.css" />
     <Content Include="Pagina 1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Detalle.aspx.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalle.aspx.designer.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ListadoDeArticulos.master.cs">
-      <DependentUpon>ListadoDeArticulos.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ListadoDeArticulos.master.designer.cs">
-      <DependentUpon>ListadoDeArticulos.master</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -109,7 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
-    <Content Include="ListadoDeArticulos.master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
