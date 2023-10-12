@@ -11,16 +11,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
 {
 
 
-    public partial class Pagina_1
+    public partial class ListadoDeArticulos
     {
-
-        /// <summary>
-        /// Control dgvArticulos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvArticulos;
     }
 }
