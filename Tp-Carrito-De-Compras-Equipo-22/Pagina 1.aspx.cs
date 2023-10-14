@@ -14,7 +14,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
         {
      
             ArticuloNegocio negocio = new ArticuloNegocio();
-            dgvArticulos.DataSource = negocio.listarConSP();
+            dgvArticulos.DataSource = negocio.listar();
             dgvArticulos.DataBind();
 
         }

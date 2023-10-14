@@ -64,27 +64,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Detalle.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Detalle.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="main.css" />
     <Content Include="Pagina 1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Detalle.aspx.cs">
-      <DependentUpon>Detalle.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Detalle.aspx.designer.cs">
-      <DependentUpon>Detalle.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalle.aspx.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalle.aspx.designer.cs">
+      <DependentUpon>Detalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -124,11 +124,11 @@
     <Folder Include="Script\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Proyecto Progra3\tp-winform-equipo-22\Dominio\Dominio.csproj">
+    <ProjectReference Include="..\..\..\CarritoProg3\Tp-CarritoCompras-22\Dominio\Dominio.csproj">
       <Project>{87aa4887-493b-4168-8e14-bb0f6aba6965}</Project>
       <Name>Dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Proyecto Progra3\tp-winform-equipo-22\Negocio\Negocio.csproj">
+    <ProjectReference Include="..\..\..\CarritoProg3\Tp-CarritoCompras-22\Negocio\Negocio.csproj">
       <Project>{4abb7f06-46b7-40e3-a02f-9f2f6f14bbfe}</Project>
       <Name>Negocio</Name>
     </ProjectReference>

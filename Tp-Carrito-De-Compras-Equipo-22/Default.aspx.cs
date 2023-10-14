@@ -16,7 +16,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            ListaArticulo = negocio.listarConSP();
+            ListaArticulo = negocio.listar();
 
             if (!IsPostBack)
             {
@@ -28,6 +28,12 @@ namespace Tp_Carrito_De_Compras_Equipo_22
         protected void buttonClick (object sender, EventArgs args)
         {
             string valor = ((Button)sender).CommandArgument;
+            
         }
+        /*protected void buttonClick(object sender, EventArgs e)
+        {
+            string aux = ((Button)sender).CommandArgument;
+            Response.Redirect("Detalle.aspx?ArticuloId=" + aux);
+        }*/
     }
 }
