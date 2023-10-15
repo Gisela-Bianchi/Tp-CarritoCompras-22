@@ -25,15 +25,26 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             }
         }
 
-        protected void buttonClick (object sender, EventArgs args)
+        protected void buttonCarrito_Click(object sender, EventArgs args)
         {
+            string commandName = ((Button)sender).CommandName;
             string valor = ((Button)sender).CommandArgument;
-            
+            if (commandName == "AgregarAlCarrito")
+            {
+                Response.Redirect("Carrito.aspx?Id=" + valor);
+            }
+
         }
-        /*protected void buttonClick(object sender, EventArgs e)
+
+        protected void buttonDetails_Click(object sender, EventArgs args)
         {
             string aux = ((Button)sender).CommandArgument;
-            Response.Redirect("Detalle.aspx?ArticuloId=" + aux);
-        }*/
+            string commandName = ((Button)sender).CommandName;
+            if (commandName == "ArticuloId") {
+                Response.Redirect("Detalle.aspx?Id=" + aux);
+            }
+        }
+    
+
     }
 }
