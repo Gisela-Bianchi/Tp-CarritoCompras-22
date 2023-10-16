@@ -5,9 +5,9 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tp-Carrito-De-Compras-Equipo-22", "Tp-Carrito-De-Compras-Equipo-22\Tp-Carrito-De-Compras-Equipo-22.csproj", "{74D45C5C-3E07-4279-A846-EC7B0801BA7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "..\..\github\repo-con-guada\Dominio\Dominio.csproj", "{87AA4887-493B-4168-8E14-BB0F6ABA6965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{87AA4887-493B-4168-8E14-BB0F6ABA6965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "..\..\github\repo-con-guada\Negocio\Negocio.csproj", "{4ABB7F06-46B7-40E3-A02F-9F2F6F14BBFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{4ABB7F06-46B7-40E3-A02F-9F2F6F14BBFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

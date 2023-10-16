@@ -29,7 +29,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav align-items-end">
-                            <a class="nav-link" href="#">Carrito</a>
+                            <a class="nav-link" href="Carrito.aspx">Carrito</a>
                             <a class="nav-link" href="Detalle.aspx">Detalles</a>
                         </div>
                     </div>
@@ -40,38 +40,8 @@
                 </asp:ContentPlaceHolder>
             </div>
             <footer>
-                <hr />
-                <h1><center> Caracteristicas Tecnicas</center></h1>
-                <h3><center>Samsung Galaxy 10</center></h3>
-                <p><center>Comunicate más rápido con la tecnología 5G</center></p>
-
-                    <p><center> Full HD+ más fluido con 120HZ de Refresh Rate</center></p>
-
-                <p><center> Cámara multifocal, fotografía multiperspectiva</center></p>
-
-                   <p><center>    Incluye cargador</center></p>
-                <h3><center>Play Station 4</center></h3>
-                <p><center> la compleja arquitectura utilizada en el procesador Cell de la videoconsola PlayStation 3, </center></p>
-                    <p><center>la PlayStation 4 cuenta con un procesador AMD de 8 núcleos bajo la arquitectura x86-64. </center></p>
-                   <p><center> Estas instrucciones x86-64 están diseñados para hacer más fácil el desarrollo de videojuegos en la consola </center></p>
-                   <p><center> de nueva generación, que atrae a un mayor número de desarrolladores. Estos cambios ponen de manifiesto el </center></p>
-                   <p><center> esfuerzo de Sony para mejorar las lecciones aprendidas durante el desarrollo, la producción y el lanzamiento </center></p>
-                   <p><center> de la PS3. Otras características de hardware notables de la PS4 es que incluyen 8 GB de memoria unificada </center></p>
-                   <p><center> GDDR5, una unidad de disco Blu-ray más rápido y los chips personalizados dedicados a tareas de procesamiento </center></p>
-                   <p><center> de audio, vídeo y de fondo.</center></p>
-                <h3><center>Televisor Bravia 55</center></h3>
-                <p><center>Mejor calidad de imagen y sonido en películas, programas y juegos con los Smart TV de 55 pulgadas.</center></p>
-                  <p><center>  4K y Full HD para imágenes increíbles y parlantes Magnetic Fluid para un sonido estremecedor. </center></p>
-                   <p><center> Los partidos son más intensos con el modo Live Football, que te trae el sonido del estadio a casa,</center></p> 
-                  <p><center>  así como noticias y titulares.</center></p>
-                <h3><center>Televisor Apple</center></h3>
-
-                <p><center>4K Resolución. de pantalla.</center></p>
-<p><center>ThreadCompatibilidad. con redes 13</center></p>
-<p><center>Gigabit Ethernet.</center></p>
-<p><center>128 GB de almacenamiento.</center></p>
-<p><center>Chip A15 Bionic.</center></p>
-<p><center>Apple TV Remote. con conector USB‑C.</center></p>
+                
+                
             </footer>
                
 

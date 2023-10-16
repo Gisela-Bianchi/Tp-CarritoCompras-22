@@ -25,14 +25,16 @@
   
 
    <div class="row row-cols-1 row-cols-md-3 g-4">
-  <asp:Repeater  runat="server" id ="repRepetidor">
+  <asp:Repeater  runat="server" id ="repRepetidor" OnItemCommand="repRepetidor_ItemCommand">
         <ItemTemplate>
               <div class="col">
             <div class="card">
               <img src="<%#Eval("ImagenUrl") %>" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title"><%#Eval("Nombre")%></h5>
-                <p class="card-text"><%#Eval("Precio")%></p>
+                <asp:Label ID="lblNombre" runat="server" Text='<%#Eval("Nombre")%>' CssClass="card-title"></asp:Label>
+                  <br />
+                  <asp:Label ID="lblPrecio" runat="server" Text='<%#Eval("Precio")%>' CssClass="card-text"></asp:Label>
+                  <br />
                   <asp:Button Text="Ver detalles" ID="buttonDetails" CssClass="btn btn-primary" runat="server" CommandArgument='<%#Eval("Id") %>' CommandName="ArticuloId" OnClick="buttonDetails_Click"/>
                  
                  <asp:button text="Agregar al carrito"  cssclass="btn btn-primary" runat="server" Id="btnAgregar" CommandName="AgregarAlCarrito" OnClick="buttonCarrito_Click" CommandArgument='<%#Eval("Id")%>'/> 

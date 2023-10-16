@@ -19,8 +19,8 @@ namespace Dominio
        public string ImagenUrl { get;set;}
         //public Imagen Imagen { get;set;}
 
+       
 
-        
 
     }
 }
