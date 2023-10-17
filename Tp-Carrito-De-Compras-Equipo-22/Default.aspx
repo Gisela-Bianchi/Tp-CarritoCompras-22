@@ -12,16 +12,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  
   
-
-    <nav class="navbar bg-body-tertiary mb-5">
-      <div class="container-fluid">
-        <div class="d-flex" role="Buscar">
-          <input class="form-control me-2"  placeholder="Search" aria-label="Buscar">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </>
-      </div>
-     </div>
-    </nav>
+ <nav class="navbar bg-body-tertiary mb-5">
+    <div class="container-fluid">
+      <div class="d-flex" role="Search">
+         <asp:TextBox CssClass="form-control me-2" ID="TextBoxBuscar" runat="server"></asp:TextBox>
+         <asp:Button ID="ButtonAceptar" CssClass="btn btn-outline-success" runat="server" Text="Aceptar" OnClick="ButtonAceptar_Click1" />
+      </>
+    </div>
+   </div>
+  </nav>
   
 
    <div class="row row-cols-1 row-cols-md-3 g-4">

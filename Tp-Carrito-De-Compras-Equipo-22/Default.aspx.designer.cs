@@ -15,6 +15,24 @@ namespace Tp_Carrito_De_Compras_Equipo_22
     {
 
         /// <summary>
+        /// Control TextBoxBuscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxBuscar;
+
+        /// <summary>
+        /// Control ButtonAceptar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonAceptar;
+
+        /// <summary>
         /// Control repRepetidor.
         /// </summary>
         /// <remarks>

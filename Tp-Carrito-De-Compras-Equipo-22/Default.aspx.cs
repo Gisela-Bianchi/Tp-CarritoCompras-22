@@ -75,5 +75,16 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             dr["Precio"] = precio;
             tabla.Rows.Add(dr);
         }
+
+        protected void ButtonAceptar_Click1(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+
+            listaFiltrada = ListaArticulo.FindAll(x => x.Nombre.ToLower().Contains(TextBoxBuscar.Text.ToLower()));
+
+            repRepetidor.DataSource = null;
+            repRepetidor.DataSource = listaFiltrada;
+            repRepetidor.DataBind();
+        }
     }
 }
