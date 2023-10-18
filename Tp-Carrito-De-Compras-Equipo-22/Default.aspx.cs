@@ -51,6 +51,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
                 Label Nombre=e.Item.FindControl("lblNombre") as Label;
                 string NombreArticulo = Nombre.Text;
                 string Precio = ((Label)e.Item.FindControl("lblPrecio")).Text;
+                
                 agregarFila((DataTable)Session["articulo"],NombreArticulo,Convert.ToDecimal(Precio));
             }
         }
@@ -63,6 +64,9 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             columna = new DataColumn("Precio", System.Type.GetType("System.Decimal"));
             dt.Columns.Add(columna);
 
+
+
+
             return dt;
         }
 
@@ -73,6 +77,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             dr["Nombre"] = nomProd;
            
             dr["Precio"] = precio;
+          
             tabla.Rows.Add(dr);
         }
 

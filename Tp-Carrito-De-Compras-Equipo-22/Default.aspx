@@ -34,6 +34,7 @@
                   <br />
                   <asp:Label ID="lblPrecio" runat="server" Text='<%#Eval("Precio")%>' CssClass="card-text"></asp:Label>
                   <br />
+                  
                   <asp:Button Text="Ver detalles" ID="buttonDetails" CssClass="btn btn-primary" runat="server" CommandArgument='<%#Eval("Id") %>' CommandName="ArticuloId" OnClick="buttonDetails_Click"/>
                  
                  <asp:button text="Agregar al carrito"  cssclass="btn btn-primary" runat="server" Id="btnAgregar" CommandName="AgregarAlCarrito" OnClick="buttonCarrito_Click" CommandArgument='<%#Eval("Id")%>'/> 
