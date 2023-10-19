@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,15 @@ namespace Tp_Carrito_De_Compras_Equipo_22
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
 
+
+                ArticuloNegocio articulo = new ArticuloNegocio();
+                dgvArticulo.DataSource = articulo.listar();
+                dgvArticulo.DataBind();
+
+            }
         }
     }
 }
