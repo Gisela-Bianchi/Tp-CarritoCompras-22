@@ -43,7 +43,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
         protected void repRepetidor_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             if(e.CommandName == "AgregarAlCarrito")
-            {
+            {   //lala
                 if (Session["articulo"] == null) {
 
                     Session["articulo"] = crearTabla();
