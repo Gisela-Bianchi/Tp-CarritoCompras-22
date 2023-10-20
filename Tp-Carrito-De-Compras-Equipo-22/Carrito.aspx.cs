@@ -26,12 +26,12 @@ namespace Tp_Carrito_De_Compras_Equipo_22
         {
             int rowIndex = e.RowIndex;
 
-            // Accede a la fuente de datos subyacente y elimina el artículo.
+            // elimina el artículo.
             DataTable dt = (DataTable)Session["articulo"];
             dt.Rows[rowIndex].Delete();
             Session["articulo"] = dt;
 
-            // Vuelve a enlazar los datos al GridView.
+          //Actualiza grilla
             dgvArticulo.DataSource = dt;
             dgvArticulo.DataBind();
           

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using Negocio;
 using Dominio;
-
+using System.Web.UI.HtmlControls;
 
 namespace Tp_Carrito_De_Compras_Equipo_22
 {
@@ -56,6 +56,8 @@ namespace Tp_Carrito_De_Compras_Equipo_22
                 string Id = e.CommandArgument.ToString();
 
                 agregarFila((DataTable)Session["articulo"],NombreArticulo,Convert.ToDecimal(Precio),Convert.ToInt16(Id));
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "mostrarPopup", "mostrarPopup();", true);
             }
         }
         public DataTable crearTabla()
@@ -100,4 +102,6 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             repRepetidor.DataBind();
         }
     }
+
+
 }
