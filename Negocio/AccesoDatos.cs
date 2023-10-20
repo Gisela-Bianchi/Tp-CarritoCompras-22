@@ -20,7 +20,7 @@ namespace Negocio
 
         public AccesoDatos()
         {
-            conexion= new SqlConnection("server=.\\SQLEXPRESS; Initial Catalog = CATALOGO_P3_DB; Integrated Security = True");
+            conexion= new SqlConnection("Data Source = ARII; Initial Catalog = CATALOGO_P3_DB; Integrated Security = True");
             comando = new SqlCommand();
         }
 

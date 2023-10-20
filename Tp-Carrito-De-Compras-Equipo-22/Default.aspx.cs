@@ -23,6 +23,7 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             {
                 repRepetidor.DataSource = ListaArticulo;
                 repRepetidor.DataBind();
+
             }
         }
 
@@ -49,10 +50,12 @@ namespace Tp_Carrito_De_Compras_Equipo_22
                     Session["articulo"] = crearTabla();
                 }
                 Label Nombre=e.Item.FindControl("lblNombre") as Label;
+
                 string NombreArticulo = Nombre.Text;
                 string Precio = ((Label)e.Item.FindControl("lblPrecio")).Text;
-                
-                agregarFila((DataTable)Session["articulo"],NombreArticulo,Convert.ToDecimal(Precio));
+                string Id = e.CommandArgument.ToString();
+
+                agregarFila((DataTable)Session["articulo"],NombreArticulo,Convert.ToDecimal(Precio),Convert.ToInt16(Id));
             }
         }
         public DataTable crearTabla()
@@ -64,19 +67,24 @@ namespace Tp_Carrito_De_Compras_Equipo_22
             columna = new DataColumn("Precio", System.Type.GetType("System.Decimal"));
             dt.Columns.Add(columna);
 
+            columna = new DataColumn("Id", System.Type.GetType("System.Decimal"));
+            dt.Columns.Add(columna);
+
 
 
 
             return dt;
         }
 
-        public void agregarFila(DataTable tabla, string nomProd, decimal precio)
+        public void agregarFila(DataTable tabla, string nomProd, decimal precio, int id)
         {
             DataRow dr = tabla.NewRow();
             
             dr["Nombre"] = nomProd;
            
             dr["Precio"] = precio;
+
+            dr["Id"] = id;
           
             tabla.Rows.Add(dr);
         }
